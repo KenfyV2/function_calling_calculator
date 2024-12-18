@@ -33,23 +33,23 @@ jobs:
         source venv/bin/activate
         pytest tests/unit/
       env:
-        db_host: ${{ secrets.DB_HOST }}
-        db_user: ${{ secrets.DB_USER }}
-        db_password: ${{ secrets.DB_PASSWORD }}
-        db_name: ${{ secrets.DB_NAME }}
-        db_port: ${{ secrets.DB_PORT }}
-        salt: ${{ secrets.SALT }}
-        api_key: ${{ secrets.API_KEY }}
+        DB_HOST: ${{ secrets.DB_HOST }}
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_NAME: ${{ secrets.DB_NAME }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        SALT: ${{ secrets.SALT }}
+        API_KEY: ${{ secrets.API_KEY }}
 
     - name: Run integration tests
       run: |
         source venv/bin/activate
         pytest tests/integration/
       env:
-        db_host: ${{ secrets.DB_HOST }}
-        db_user: ${{ secrets.DB_USER }}
-        db_password: ${{ secrets.DB_PASSWORD }}
-        db_name: ${{ secrets.DB_NAME }}
-        db_port: ${{ secrets.DB_PORT }}
-        salt: ${{ secrets.SALT }}
-        api_key: ${{ secrets.API_KEY }}
+        DB_HOST: ${{ secrets.DB_HOST }}
+        DB_USER: ${{ secrets.DB_USER }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_NAME: ${{ secrets.DB_NAME }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        SALT: ${{ secrets.SALT }}
+        API_KEY: ${{ secrets.API_KEY }}
