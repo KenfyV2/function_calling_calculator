@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World & Calculator Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .calculator, .chat {
+            margin-top: 30px;
+        }
+        input, textarea {
+            margin: 5px;
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    
+    <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="number" id="a" placeholder="First number">
+        <input type="number" id="b" placeholder="Second number"><br>
+        <button onclick="calculate('add')">Add</button>
+        <button onclick="calculate('subtract')">Subtract</button>
+        <button onclick="calculate('multiply')">Multiply</button>
+        <button onclick="calculate('divide')">Divide</button>
+        <div class="result" id="result"></div>
+    </div>
+    
+    <div class="chat">
+        <h2>Groq AI Chat</h2>
+        <p>Ask Groq AI addition, subtraction, multiplication, or division!</p>
+        <form id="chat-form">
+            <textarea id="prompt" name="prompt" placeholder="Enter your prompt" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+        <div class="result" id="chat-result"></div>
+    </div>
+    
+    <script>
+        async function calculate(operation) {
+            const a = parseFloat(document.getElementById('a').value);
+            const b = parseFloat(document.getElementById('b').value);
+            const resultElement = document.getElementById('result');
+    
+            try {
+                const response = await fetch('/' + operation, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ a: a, b: b })
+                });
+                const data = await response.json();
+                console.log('Response Status:', response.status);
+                console.log('Response Data:', data);
+                if (response.ok) {
+                    resultElement.innerText = 'Result: ' + data.result;
+                } else {
+                    resultElement.innerText = 'Error: ' + data.error;
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                resultElement.innerText = 'Error: ' + error.message;
+            }
+        }
+
+        document.getElementById('chat-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const prompt = document.getElementById('prompt').value;
+            const chatResultElement = document.getElementById('chat-result');
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams({ 'prompt': prompt })
+                });
+                const data = await response.json();
+                chatResultElement.innerText = `Result: ${data.result}`;
+            } catch (error) {
+                console.error('Fetch error:', error);
+                chatResultElement.innerText = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
