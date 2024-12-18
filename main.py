@@ -45,6 +45,9 @@ def call_groq_function(prompt, functions, model="llama3-8b-8192"):
         response.raise_for_status()
         data = response.json()
 
+        # Print the response for debugging
+        # print("API Response:", json.dumps(data, indent=2))
+        
         # Check if the model called a function
         if "function_call" in data["choices"][0]["message"]:
             function_name = data["choices"][0]["message"]["function_call"]["name"]
@@ -61,6 +64,8 @@ def call_groq_function(prompt, functions, model="llama3-8b-8192"):
 def console_chat():
     print("Welcome to the Groq Function Chat!")
     print("You can ask the system to perform addition, subtraction, multiplication, or division.")
+    print("Type 'history' to see the history of calculations.")
+    print("Type 'exit' or 'quit' to end the chat.")
 
     functions = [
         {
@@ -113,11 +118,18 @@ def console_chat():
         }
     ]
 
+    history = []
+
     while True:
         prompt = input("You: ")
         if prompt.lower() in ["exit", "quit"]:
             print("Goodbye!")
             break
+        elif prompt.lower() == "history":
+            print("Calculation History:")
+            for entry in history:
+                print(entry)
+            continue
 
         function_name, arguments = call_groq_function(prompt, functions)
 
@@ -133,6 +145,7 @@ def console_chat():
             else:
                 result = "Error: Unknown function called"
 
+            history.append(f"{prompt} = {result}")
             print(f"Result: {result}")
         else:
             print("No function call was made or an error occurred.")
