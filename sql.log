@@ -1,0 +1,176 @@
+2024-12-18 00:28:05,393 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:28:05,393 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:28:05,394 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:28:05,394 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:28:05,395 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:28:05,395 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:28:05,396 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:28:05,396 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:28:05,397 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:28:05,402 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:28:05,403 - sqlalchemy.engine.Engine - INFO - [generated in 0.00064s] {}
+2024-12-18 00:28:05,404 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:32:41,114 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:32:41,115 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:32:41,116 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:32:41,116 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:32:41,117 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:32:41,117 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:32:41,117 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:32:41,118 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:32:41,118 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:32:41,122 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:32:41,123 - sqlalchemy.engine.Engine - INFO - [generated in 0.00049s] {}
+2024-12-18 00:32:41,124 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:50:22,310 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:50:22,310 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:22,311 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:50:22,311 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:22,312 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:50:22,312 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:22,313 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:50:22,313 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:50:22,314 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:50:22,318 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:50:22,319 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {}
+2024-12-18 00:50:22,319 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:50:55,484 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:50:55,485 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:55,486 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:50:55,486 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:55,487 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:50:55,487 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:50:55,487 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:50:55,488 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:50:55,489 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:50:55,493 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:50:55,493 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] {}
+2024-12-18 00:50:55,494 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:51:28,195 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:51:28,196 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:51:28,197 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:51:28,197 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:51:28,198 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:51:28,198 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:51:28,199 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:51:28,199 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:51:28,200 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:51:28,204 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:51:28,204 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {}
+2024-12-18 00:51:28,205 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:54:20,611 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:54:20,611 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:20,612 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:54:20,612 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:20,613 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:54:20,613 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:20,614 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:54:20,614 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:54:20,615 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:54:20,619 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:54:20,619 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] {}
+2024-12-18 00:54:20,620 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:54:59,436 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:54:59,436 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:59,437 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:54:59,437 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:59,438 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:54:59,439 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:54:59,439 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:54:59,440 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:54:59,440 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:54:59,445 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:54:59,445 - sqlalchemy.engine.Engine - INFO - [generated in 0.00046s] {}
+2024-12-18 00:54:59,446 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:56:10,223 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:56:10,223 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:10,224 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:56:10,224 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:10,225 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:56:10,225 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:10,226 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:56:10,226 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:56:10,227 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:56:10,228 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:56:55,445 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:56:55,445 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:55,446 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:56:55,447 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:55,447 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:56:55,448 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:56:55,448 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:56:55,449 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:56:55,449 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:56:55,454 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:56:55,454 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {}
+2024-12-18 00:56:55,455 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:57:42,201 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:57:42,201 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:57:42,203 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:57:42,203 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:57:42,204 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:57:42,204 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:57:42,204 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:57:42,205 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:57:42,206 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:57:42,210 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:57:42,210 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] {}
+2024-12-18 00:57:42,211 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 00:59:38,543 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 00:59:38,543 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:59:38,544 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 00:59:38,545 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:59:38,546 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 00:59:38,546 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 00:59:38,546 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:59:38,547 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 00:59:38,548 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 00:59:38,551 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 00:59:38,552 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {}
+2024-12-18 00:59:38,553 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-18 01:10:22,434 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 01:10:22,434 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 01:10:22,436 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 01:10:22,436 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 01:10:22,436 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 01:10:22,437 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 01:10:22,437 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 01:10:22,438 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 01:10:22,439 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 01:10:22,443 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 01:10:22,443 - sqlalchemy.engine.Engine - INFO - [generated in 0.00051s] {}
+2024-12-18 01:10:22,446 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-18 01:10:22,446 - sqlalchemy.engine.Engine - INFO - [generated in 0.00042s] {}
+2024-12-18 01:10:24,564 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 1172 characters truncated ... ast_name__9)s, %(email__9)s, %(username__9)s, %(password__9)s, %(created_at__9)s, %(updated_at__9)s)
+2024-12-18 01:10:24,565 - sqlalchemy.engine.Engine - INFO - [generated in 0.00016s (insertmanyvalues) 1/1 (unordered)] {'first_name__0': 'Laura', 'created_at__0': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__0': '$2b$12$DuoAtKcc0GOLvpMrKjUjC.vl/IH/nKZTpZnO21rq/J1SqUsKYhTFm', 'username__0': 'jmiller', 'id__0': UUID('32b87ccc-ec4f-4224-9d64-f6142891d659'), 'updated_at__0': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__0': 'Vargas', 'email__0': 'roberthunter@example.com', 'first_name__1': 'Thomas', 'created_at__1': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__1': '$2b$12$mp209.oou9nLjaMbm6TO6uSnKceBDtZvnxrNo1taogtP0amO48COO', 'username__1': 'stevenjohnson', 'id__1': UUID('45fabdfb-5fe8-4456-a976-ad96ebeda0f4'), 'updated_at__1': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__1': 'Adams', 'email__1': 'shane75@example.org', 'first_name__2': 'John', 'created_at__2': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__2': '$2b$12$DaR.yyhUffv1af6GC6lsWORTYRMbMa0ZFLNo0IiH6Ah.KSis6OQ6y', 'username__2': 'tsmith', 'id__2': UUID('22838921-8305-4246-860c-97dc643d9c5d'), 'updated_at__2': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__2': 'Avery', 'email__2': 'caitlin82@example.org', 'first_name__3': 'Nicole', 'created_at__3': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__3': '$2b$12$7opG4eQASFVMkhE9Cel5xOOaZLi6hSmdphISMEVzgn1aqsxxbJJPe', 'username__3': 'smithtiffany', 'id__3': UUID('30f4ec9c-7fc4-442b-9e3a-a9e920a6807f'), 'updated_at__3': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__3': 'Thompson', 'email__3': 'erica97@example.net', 'first_name__4': 'Chase', 'created_at__4': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__4': '$2b$12$GefJH0P1WUgQfAz.t8HifOo8.x3MNWGEfapYH5pVx2E8809vdsQei', 'username__4': 'kaylamolina', 'id__4': UUID('465fee3c-c9bf-45c8-a1ca-2d59308f9aa8'), 'updated_at__4': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__4': 'Bell', 'email__4': 'gabriellecisneros@example.net', 'first_name__5': 'Charles', 'created_at__5': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__5': '$2b$12$3ZVZv6WIRB0gmvxlssLriObImdtDKUWrZK1D2gUapAdTNaNXAsqo.', 'username__5': 'linda64', 'id__5': UUID('893159c6-ce43-4535-9df5-d2d3ec18c469'), 'updated_at__5': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__5': 'Hill', 'email__5': 'jasonavery@example.com', 'first_name__6': 'Gary', 'created_at__6': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__6': '$2b$12$uPnjbfgKjaurWAz1XrM1se0ZNEkM797c4rqhVhVAQNjtsqoCNxd5K', 'username__6': 'xmorales', 'id__6': UUID('81e5fb5d-51eb-4b9a-8dc9-8c3f3fb502a8'), 'updated_at__6': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__6': 'Harris', 'email__6': 'olivia88@example.com', 'first_name__7': 'Chloe', 'created_at__7': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__7': '$2b$12$wIeRSpC9NcaNi6N0qvSTq..T3DaquGkja8f75n42nSo8eWjnA5ovG', 'username__7': 'joseph72', 'id__7': UUID('01c53887-0e32-41fc-88b6-dcc13c549744'), 'updated_at__7': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__7': 'Romero', 'email__7': 'katiealvarez@example.com', 'first_name__8': 'Holly', 'created_at__8': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__8': '$2b$12$p6141oXvVrk/5o/ALIUpfukhCQNwvOoE/6iMAzs6vSImG6hRHuYEm', 'username__8': 'johnsonsarah', 'id__8': UUID('7ab06411-c646-448e-b1c0-f2e79ff3e3c3'), 'updated_at__8': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__8': 'Alexander', 'email__8': 'ashleyandrade@example.com', 'first_name__9': 'Linda', 'created_at__9': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'password__9': '$2b$12$AdUhVNvBrjcNo3dVu8FB9OU/ktpqDmONQPsEKMNHahzRTynNstK.K', 'username__9': 'stacy32', 'id__9': UUID('8dc311dc-eb42-42c5-9f3c-e8f73405bf42'), 'updated_at__9': datetime.datetime(2024, 12, 18, 6, 10, 24, 564800), 'last_name__9': 'Diaz', 'email__9': 'josephhunter@example.org'}
+2024-12-18 01:10:24,570 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 03:35:54,950 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-18 03:35:54,951 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 03:35:54,952 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-18 03:35:54,953 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 03:35:54,953 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-18 03:35:54,954 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-18 03:35:54,954 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 03:35:54,955 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-18 03:35:54,956 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-18 03:35:54,961 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-18 03:35:54,961 - sqlalchemy.engine.Engine - INFO - [generated in 0.00050s] {}
+2024-12-18 03:35:54,965 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-18 03:35:54,965 - sqlalchemy.engine.Engine - INFO - [generated in 0.00052s] {}
+2024-12-18 03:35:57,136 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 1172 characters truncated ... ast_name__9)s, %(email__9)s, %(username__9)s, %(password__9)s, %(created_at__9)s, %(updated_at__9)s)
+2024-12-18 03:35:57,136 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s (insertmanyvalues) 1/1 (unordered)] {'id__0': UUID('9e1603b4-e046-4341-baae-1604a2158c0c'), 'last_name__0': 'Frederick', 'username__0': 'wendymiles', 'created_at__0': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__0': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__0': 'Leslie', 'password__0': '$2b$12$cXNb1zsqaEa5kQaGV4TtJOBxQ6TSIrnbVUjHoXX6DesgOqV8CxiN.', 'email__0': 'darrengood@example.org', 'id__1': UUID('a21e78ff-af92-44ad-80b7-60abde8400fc'), 'last_name__1': 'Duran', 'username__1': 'wfisher', 'created_at__1': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__1': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__1': 'Shane', 'password__1': '$2b$12$1MwXRjMw/QNhn.oFbJlmyOX1v4ZNhbf0c1kZSkzlxc7E37ZYcnBGW', 'email__1': 'jessicajohnson@example.net', 'id__2': UUID('38ae736b-0e96-44c0-9e37-70a0483ebd22'), 'last_name__2': 'Hudson', 'username__2': 'rsmith', 'created_at__2': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__2': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__2': 'Richard', 'password__2': '$2b$12$YZu1wMhPkX.x5HR19nHH2ugbnRa1/keHtOjqG6kNKoPdh1Z/pGed2', 'email__2': 'kristinsmith@example.org', 'id__3': UUID('04f4dd14-f64b-4760-8001-85f641867fa2'), 'last_name__3': 'Aguirre', 'username__3': 'swilson', 'created_at__3': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__3': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__3': 'Victor', 'password__3': '$2b$12$H/9sLlBq3XVMNF4UnDcQb.NwbdCmq6SL2JRtCZ1O.IffgjLUAXig.', 'email__3': 'ymoses@example.net', 'id__4': UUID('d3d0c801-dd41-4c15-9afa-4dd0cb88515b'), 'last_name__4': 'Medina', 'username__4': 'stevensonrebekah', 'created_at__4': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__4': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__4': 'Melissa', 'password__4': '$2b$12$06xZg5.sDNYadnV5Ovwuke3amczvNlOs980aIuZcXhX44ngjaAlsq', 'email__4': 'samantha69@example.net', 'id__5': UUID('d08a6286-e9db-4435-982b-5420fe2b6348'), 'last_name__5': 'Roberts', 'username__5': 'calderonsheila', 'created_at__5': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__5': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__5': 'Christopher', 'password__5': '$2b$12$mQcykFfw3yYBiDGqvAb5iu2FPHOW1jG7eqIbMB3CR307Xi4D9wWP6', 'email__5': 'brandonaustin@example.net', 'id__6': UUID('2b013542-a4ad-416e-821d-90cb2793e104'), 'last_name__6': 'Giles', 'username__6': 'williamsdanny', 'created_at__6': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__6': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__6': 'Ryan', 'password__6': '$2b$12$hMnkq57NBkQ5F/gZV09OmeK8qC6LDBhNe3VDMl1Py2ixX5kksRKLW', 'email__6': 'reneehart@example.net', 'id__7': UUID('42ed1a3f-4fd8-4644-9738-0a5047b2f139'), 'last_name__7': 'Snow', 'username__7': 'amclean', 'created_at__7': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__7': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__7': 'Sandra', 'password__7': '$2b$12$YqKxNsswxVcs8ZCxMb7PjOY0Iew.LhPuRgUXf48PoRfw17A/K7/8m', 'email__7': 'carsongabriela@example.org', 'id__8': UUID('36f181c3-074e-44fa-b54e-bf2d943e500e'), 'last_name__8': 'Harris', 'username__8': 'melanie17', 'created_at__8': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__8': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__8': 'Dennis', 'password__8': '$2b$12$shO11MLWaco1qsiVH2f9P.e83Vbmq0YIMqJYA6VbgNBeiveYVC4vC', 'email__8': 'carla08@example.com', 'id__9': UUID('e09c1a00-b294-4d82-a1bb-f917f2b65a9b'), 'last_name__9': 'Dominguez', 'username__9': 'robertrogers', 'created_at__9': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__9': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__9': 'Gregory', 'password__9': '$2b$12$4axitZU2OPPF0Qupq8cpzO4wPnYSUNB/8.r7ddczXbYfp7ztqqh3i', 'email__9': 'jennifer25@example.org'}
+2024-12-18 03:35:57,141 - sqlalchemy.engine.Engine - INFO - COMMIT
