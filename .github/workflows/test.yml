@@ -27,7 +27,6 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
         playwright install
-
         - name: Run tests
         run: |
           source venv/bin/activate
