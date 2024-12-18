@@ -20,6 +20,42 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          libwoff1 \
+          libvpx6 \
+          libevent-2.1-7 \
+          libopus0 \
+          libgstallocators-1.0-0 \
+          libgstapp-1.0-0 \
+          libgstpbutils-1.0-0 \
+          libgstaudio-1.0-0 \
+          libgstgl-1.0-0 \
+          libgsttag-1.0-0 \
+          libgstvideo-1.0-0 \
+          libgstcodecparsers-1.0-0 \
+          libgstfft-1.0-0 \
+          libharfbuzz-icu0 \
+          libhyphen0 \
+          libmanette-0.2-0 \
+          libflite1 \
+          libflite_usenglish1 \
+          libflite_cmu_grapheme_lang1 \
+          libflite_cmu_grapheme_lex1 \
+          libflite_cmu_indic_lang1 \
+          libflite_cmu_indic_lex1 \
+          libflite_cmulex1 \
+          libflite_cmu_time_awb1 \
+          libflite_cmu_us_awb1 \
+          libflite_cmu_us_kal16 \
+          libflite_cmu_us_kal1 \
+          libflite_cmu_us_rms1 \
+          libflite_cmu_us_slt1 \
+          libgles2-mesa \
+          libx264-160
+        
     - name: Install dependencies
       run: |
         python -m venv venv
