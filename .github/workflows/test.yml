@@ -25,17 +25,9 @@ jobs:
         source venv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
-<<<<<<< HEAD
         playwright install
         
     - name: Run tests
       run: |
         source venv/bin/activate
         pytest tests/
-=======
-
-    - name: Run tests
-      run: |
-        source venv/bin/activate
-        pytest tests/
->>>>>>> f4b56d5 (Add bcrypt to requirements and update GitHub Actions workflow)
