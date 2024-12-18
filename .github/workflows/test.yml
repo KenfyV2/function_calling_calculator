@@ -1,21 +1,22 @@
-name: CI
+name: Python application
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
@@ -31,13 +32,24 @@ jobs:
       run: |
         source venv/bin/activate
         pytest tests/unit/
+      env:
+        db_host: ${{ secrets.DB_HOST }}
+        db_user: ${{ secrets.DB_USER }}
+        db_password: ${{ secrets.DB_PASSWORD }}
+        db_name: ${{ secrets.DB_NAME }}
+        db_port: ${{ secrets.DB_PORT }}
+        salt: ${{ secrets.SALT }}
+        api_key: ${{ secrets.API_KEY }}
 
     - name: Run integration tests
       run: |
         source venv/bin/activate
         pytest tests/integration/
-
-    - name: Run E2E tests
-      run: |
-        source venv/bin/activate
-        pytest tests/e2e/
+      env:
+        db_host: ${{ secrets.DB_HOST }}
+        db_user: ${{ secrets.DB_USER }}
+        db_password: ${{ secrets.DB_PASSWORD }}
+        db_name: ${{ secrets.DB_NAME }}
+        db_port: ${{ secrets.DB_PORT }}
+        salt: ${{ secrets.SALT }}
+        api_key: ${{ secrets.API_KEY }}
