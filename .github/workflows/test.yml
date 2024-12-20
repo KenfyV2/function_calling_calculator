@@ -11,6 +11,21 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: fastapi_db
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
     - uses: actions/checkout@v3
 
@@ -29,11 +44,11 @@ jobs:
     - name: Create .env file
       run: |
         echo "API_KEY=${{ secrets.API_KEY }}" >> .env
-        echo "db_host=${{ secrets.DB_HOST }}" >> .env
-        echo "db_user=${{ secrets.DB_USER }}" >> .env
-        echo "db_password=${{ secrets.DB_PASSWORD }}" >> .env
-        echo "db_name=${{ secrets.DB_NAME }}" >> .env
-        echo "db_port=${{ secrets.DB_PORT }}" >> .env
+        echo "db_host=localhost" >> .env
+        echo "db_user=postgres" >> .env
+        echo "db_password=postgres" >> .env
+        echo "db_name=fastapi_db" >> .env
+        echo "db_port=5432" >> .env
         echo "salt=${{ secrets.SALT }}" >> .env
 
     - name: Run tests
