@@ -19,4 +19,5 @@ class Settings(BaseSettings):
         env_prefix = "DB_"  # Prefix only for database-related environment variables
         fields = {
             'salt': {'env': 'SALT'},  # Map 'salt' to 'SALT' without the 'DB_' prefix
+            'api_key': {'env': 'API_KEY'},  # Map 'api_key' to 'API_KEY' without the 'DB_' prefix
         }
