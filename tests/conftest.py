@@ -20,6 +20,16 @@ from app.settings import Settings  # Adjust the import path based on where Setti
 # Load environment variables from .env file
 load_dotenv()
 
+# Debug: Print loaded environment variables
+print("Loaded environment variables:")
+print(f"db_host: {os.getenv('db_host')}")
+print(f"db_user: {os.getenv('db_user')}")
+print(f"db_password: {os.getenv('db_password')}")
+print(f"db_name: {os.getenv('db_name')}")
+print(f"db_port: {os.getenv('db_port')}")
+print(f"salt: {os.getenv('salt')}")
+print(f"api_key: {os.getenv('API_KEY')}")
+
 # Initialize Faker and Passlib's CryptContext
 fake = Faker()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
