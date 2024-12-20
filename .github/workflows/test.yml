@@ -25,7 +25,17 @@ jobs:
         source venv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
-        
+
+    - name: Create .env file
+      run: |
+        echo "API_KEY=${{ secrets.API_KEY }}" >> .env
+        echo "db_host=${{ secrets.DB_HOST }}" >> .env
+        echo "db_user=${{ secrets.DB_USER }}" >> .env
+        echo "db_password=${{ secrets.DB_PASSWORD }}" >> .env
+        echo "db_name=${{ secrets.DB_NAME }}" >> .env
+        echo "db_port=${{ secrets.DB_PORT }}" >> .env
+        echo "salt=${{ secrets.SALT }}" >> .env
+
     - name: Run tests
       run: |
         source venv/bin/activate
