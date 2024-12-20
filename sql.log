@@ -174,3 +174,609 @@ FROM users
 2024-12-18 03:35:57,136 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 1172 characters truncated ... ast_name__9)s, %(email__9)s, %(username__9)s, %(password__9)s, %(created_at__9)s, %(updated_at__9)s)
 2024-12-18 03:35:57,136 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s (insertmanyvalues) 1/1 (unordered)] {'id__0': UUID('9e1603b4-e046-4341-baae-1604a2158c0c'), 'last_name__0': 'Frederick', 'username__0': 'wendymiles', 'created_at__0': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__0': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__0': 'Leslie', 'password__0': '$2b$12$cXNb1zsqaEa5kQaGV4TtJOBxQ6TSIrnbVUjHoXX6DesgOqV8CxiN.', 'email__0': 'darrengood@example.org', 'id__1': UUID('a21e78ff-af92-44ad-80b7-60abde8400fc'), 'last_name__1': 'Duran', 'username__1': 'wfisher', 'created_at__1': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__1': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__1': 'Shane', 'password__1': '$2b$12$1MwXRjMw/QNhn.oFbJlmyOX1v4ZNhbf0c1kZSkzlxc7E37ZYcnBGW', 'email__1': 'jessicajohnson@example.net', 'id__2': UUID('38ae736b-0e96-44c0-9e37-70a0483ebd22'), 'last_name__2': 'Hudson', 'username__2': 'rsmith', 'created_at__2': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__2': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__2': 'Richard', 'password__2': '$2b$12$YZu1wMhPkX.x5HR19nHH2ugbnRa1/keHtOjqG6kNKoPdh1Z/pGed2', 'email__2': 'kristinsmith@example.org', 'id__3': UUID('04f4dd14-f64b-4760-8001-85f641867fa2'), 'last_name__3': 'Aguirre', 'username__3': 'swilson', 'created_at__3': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__3': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__3': 'Victor', 'password__3': '$2b$12$H/9sLlBq3XVMNF4UnDcQb.NwbdCmq6SL2JRtCZ1O.IffgjLUAXig.', 'email__3': 'ymoses@example.net', 'id__4': UUID('d3d0c801-dd41-4c15-9afa-4dd0cb88515b'), 'last_name__4': 'Medina', 'username__4': 'stevensonrebekah', 'created_at__4': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__4': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__4': 'Melissa', 'password__4': '$2b$12$06xZg5.sDNYadnV5Ovwuke3amczvNlOs980aIuZcXhX44ngjaAlsq', 'email__4': 'samantha69@example.net', 'id__5': UUID('d08a6286-e9db-4435-982b-5420fe2b6348'), 'last_name__5': 'Roberts', 'username__5': 'calderonsheila', 'created_at__5': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__5': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__5': 'Christopher', 'password__5': '$2b$12$mQcykFfw3yYBiDGqvAb5iu2FPHOW1jG7eqIbMB3CR307Xi4D9wWP6', 'email__5': 'brandonaustin@example.net', 'id__6': UUID('2b013542-a4ad-416e-821d-90cb2793e104'), 'last_name__6': 'Giles', 'username__6': 'williamsdanny', 'created_at__6': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__6': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__6': 'Ryan', 'password__6': '$2b$12$hMnkq57NBkQ5F/gZV09OmeK8qC6LDBhNe3VDMl1Py2ixX5kksRKLW', 'email__6': 'reneehart@example.net', 'id__7': UUID('42ed1a3f-4fd8-4644-9738-0a5047b2f139'), 'last_name__7': 'Snow', 'username__7': 'amclean', 'created_at__7': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__7': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__7': 'Sandra', 'password__7': '$2b$12$YqKxNsswxVcs8ZCxMb7PjOY0Iew.LhPuRgUXf48PoRfw17A/K7/8m', 'email__7': 'carsongabriela@example.org', 'id__8': UUID('36f181c3-074e-44fa-b54e-bf2d943e500e'), 'last_name__8': 'Harris', 'username__8': 'melanie17', 'created_at__8': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__8': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__8': 'Dennis', 'password__8': '$2b$12$shO11MLWaco1qsiVH2f9P.e83Vbmq0YIMqJYA6VbgNBeiveYVC4vC', 'email__8': 'carla08@example.com', 'id__9': UUID('e09c1a00-b294-4d82-a1bb-f917f2b65a9b'), 'last_name__9': 'Dominguez', 'username__9': 'robertrogers', 'created_at__9': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'updated_at__9': datetime.datetime(2024, 12, 18, 8, 35, 57, 135690), 'first_name__9': 'Gregory', 'password__9': '$2b$12$4axitZU2OPPF0Qupq8cpzO4wPnYSUNB/8.r7ddczXbYfp7ztqqh3i', 'email__9': 'jennifer25@example.org'}
 2024-12-18 03:35:57,141 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 21:22:43,805 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 21:22:43,805 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:22:43,806 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 21:22:43,807 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:22:43,807 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 21:22:43,807 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:22:43,808 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 21:22:43,809 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 21:22:43,809 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 21:22:43,814 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 21:22:43,814 - sqlalchemy.engine.Engine - INFO - [generated in 0.00069s] {}
+2024-12-19 21:22:43,817 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 21:22:43,818 - sqlalchemy.engine.Engine - INFO - [generated in 0.00052s] {}
+2024-12-19 21:22:45,975 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 1172 characters truncated ... ast_name__9)s, %(email__9)s, %(username__9)s, %(password__9)s, %(created_at__9)s, %(updated_at__9)s)
+2024-12-19 21:22:45,975 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s (insertmanyvalues) 1/1 (unordered)] {'first_name__0': 'Amanda', 'created_at__0': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__0': 'pphillips', 'updated_at__0': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__0': '$2b$12$H5vAcyag4tUOnYRvRKwsROV.UVrQ1C9GerCZupcS8uSug173NFx/y', 'last_name__0': 'Campbell', 'id__0': UUID('b0c93e7f-b1df-4abd-8d51-7951b687327d'), 'email__0': 'diane12@example.org', 'first_name__1': 'Diana', 'created_at__1': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__1': 'nosborne', 'updated_at__1': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__1': '$2b$12$B82qauDNgNLn93sSmYJ/duJ9CnZarDvJ7mT7d9u1IZT9Lxwv55so6', 'last_name__1': 'Rogers', 'id__1': UUID('c5d693db-dcb3-4dad-b0f2-078d516bd1a6'), 'email__1': 'riverajessica@example.net', 'first_name__2': 'Michelle', 'created_at__2': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__2': 'jimmyscott', 'updated_at__2': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__2': '$2b$12$g.Hp/6iLPPFq6QArx4j0MeOz.Goeq.UqRt3BSyOJhrGs.VNQ4erri', 'last_name__2': 'Collins', 'id__2': UUID('a0f5876d-abdc-47c8-89ac-2c3e83a4a513'), 'email__2': 'sball@example.net', 'first_name__3': 'Anthony', 'created_at__3': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__3': 'melissa24', 'updated_at__3': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__3': '$2b$12$NX2ynCboGrsLJBVraraaYeECOr.DZ5a0..HHam.ZLyBcTFaQOwnw6', 'last_name__3': 'King', 'id__3': UUID('7f5154f3-88df-4e15-97d0-b71dfdfc6dc2'), 'email__3': 'quinnteresa@example.com', 'first_name__4': 'Heather', 'created_at__4': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__4': 'cheryl68', 'updated_at__4': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__4': '$2b$12$KkwjfEZKy8fJhEJ0Rezh6O7Zn7CZIT/0cfXoG4V5ADORodsl/Ugii', 'last_name__4': 'Carson', 'id__4': UUID('ddeb8c36-8926-4ac6-959e-09e45cdf3af7'), 'email__4': 'cdonovan@example.net', 'first_name__5': 'Michael', 'created_at__5': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__5': 'alexanderlopez', 'updated_at__5': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__5': '$2b$12$nRtcNXNfVs2Yte5083voV.oub13MrnEE4qNjyGJefQtFtyS41IreK', 'last_name__5': 'Lyons', 'id__5': UUID('295b2b08-0932-47ae-8356-6b224ef23cf3'), 'email__5': 'fparker@example.net', 'first_name__6': 'James', 'created_at__6': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__6': 'robertrice', 'updated_at__6': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__6': '$2b$12$oE/kUeixhPCQRtSZadIK4.vXjo4a2MKPtdmMkkWCo/daWa2PROOeK', 'last_name__6': 'Padilla', 'id__6': UUID('1e3a47d9-84ff-4b7f-becb-e27df07aacb0'), 'email__6': 'lyoung@example.com', 'first_name__7': 'Brandon', 'created_at__7': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__7': 'nancyanderson', 'updated_at__7': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__7': '$2b$12$X0mCtbRaspjKv6K13kObKuXrvZRZlXjwwzNjprhimoMUWBuRMt.h2', 'last_name__7': 'Dunlap', 'id__7': UUID('8d284d0b-c367-4a89-9cd4-66bfb6203d8f'), 'email__7': 'tyang@example.org', 'first_name__8': 'Jamie', 'created_at__8': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__8': 'sherry26', 'updated_at__8': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__8': '$2b$12$A7Jv3lfk3bDC7NQL4qtRhOiEE4VvrABumIeEB07NWlF7yQFptDl8S', 'last_name__8': 'Adams', 'id__8': UUID('b3980c02-ab6f-46c7-b02e-b1250b631540'), 'email__8': 'seantaylor@example.org', 'first_name__9': 'Jacob', 'created_at__9': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'username__9': 'claytonmichelle', 'updated_at__9': datetime.datetime(2024, 12, 20, 2, 22, 45, 975606), 'password__9': '$2b$12$MLstkRRyM64kmS91nRRnReH02NNY3izWS4Xhq9Wf29GrTCWNzv6mq', 'last_name__9': 'Clarke', 'id__9': UUID('e5c18dd9-de3c-47f3-b16b-0bbbf88e7ef7'), 'email__9': 'kstewart@example.com'}
+2024-12-19 21:22:45,980 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 21:34:18,846 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 21:34:18,846 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:34:18,847 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 21:34:18,848 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:34:18,848 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 21:34:18,849 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 21:34:18,849 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 21:34:18,850 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 21:34:18,851 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 21:34:18,855 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 21:34:18,856 - sqlalchemy.engine.Engine - INFO - [generated in 0.00057s] {}
+2024-12-19 21:34:18,859 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 21:34:18,859 - sqlalchemy.engine.Engine - INFO - [generated in 0.00053s] {}
+2024-12-19 21:34:19,098 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 21:34:19,098 - sqlalchemy.engine.Engine - INFO - [generated in 0.00060s] {'id': UUID('ce92ae1d-3785-4b42-bc33-22dc0cace9e2'), 'first_name': 'Wayne', 'last_name': 'Chan', 'email': 'myersheather@example.com', 'username': 'james39', 'password': '$2b$12$N5guRuCS9pp3GSGiWxP1K.wDZmcZoOZvxhxkfqFTmiTah4auc./Wa', 'created_at': datetime.datetime(2024, 12, 20, 2, 34, 19, 98443), 'updated_at': datetime.datetime(2024, 12, 20, 2, 34, 19, 98443)}
+2024-12-19 21:34:19,100 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 21:34:19,102 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 21:34:19,103 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 21:34:19,103 - sqlalchemy.engine.Engine - INFO - [cached since 0.005424s ago] {'id': UUID('a39bcee7-2656-4cb7-876a-de85c4f8133e'), 'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com', 'username': 'johndoe', 'password': 'hashedpassword', 'created_at': datetime.datetime(2024, 12, 20, 2, 34, 19, 103444), 'updated_at': datetime.datetime(2024, 12, 20, 2, 34, 19, 103444)}
+2024-12-19 21:34:19,105 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:32,885 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:32,886 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2024-12-19 23:39:32,887 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:39:32,887 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2024-12-19 23:39:32,888 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:39:32,888 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("calculations")
+2024-12-19 23:39:32,888 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:39:32,889 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("calculations")
+2024-12-19 23:39:32,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:39:32,890 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id UUID NOT NULL, 
+	first_name VARCHAR(50) NOT NULL, 
+	last_name VARCHAR(50) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(255) NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (username)
+)
+
+
+2024-12-19 23:39:32,890 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2024-12-19 23:39:32,892 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE calculations (
+	id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	type VARCHAR(50) NOT NULL, 
+	value_a FLOAT NOT NULL, 
+	value_b FLOAT NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2024-12-19 23:39:32,892 - sqlalchemy.engine.Engine - INFO - [no key 0.00037s] ()
+2024-12-19 23:39:32,893 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:32,954 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:39:32,955 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:32,955 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:39:32,956 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:32,956 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:39:32,956 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:32,957 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:32,960 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:39:32,960 - sqlalchemy.engine.Engine - INFO - [generated in 0.00044s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:39:32,963 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:39:32,964 - sqlalchemy.engine.Engine - INFO - [cached since 0.003841s ago] {'table_name': 'calculations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:39:32,964 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:40,092 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,095 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:39:40,095 - sqlalchemy.engine.Engine - INFO - [generated in 0.00092s] {'id': UUID('d4b844ba-1524-4e0c-a001-f93d9514d3b3'), 'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com', 'username': 'johndoe', 'password': 'hashedpassword123', 'created_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 95539), 'updated_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 95539)}
+2024-12-19 23:39:40,097 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:40,099 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,102 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:39:40,102 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] {'email_1': 'john.doe@example.com', 'param_1': 1}
+2024-12-19 23:39:40,106 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:39:40,106 - sqlalchemy.engine.Engine - INFO - [generated in 0.00032s] {'username_1': 'johndoe', 'param_1': 1}
+2024-12-19 23:39:40,108 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:40,346 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,347 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:39:40,347 - sqlalchemy.engine.Engine - INFO - [cached since 0.2533s ago] {'id': UUID('633b3924-d806-4005-a9ad-f2fe95f8ea40'), 'first_name': 'Aaron', 'last_name': 'Morton', 'email': 'dwade@example.net', 'username': 'cruzsabrina', 'password': '$2b$12$.BsOF4nXZooL3j.Ans9y5.zbsm6d3XfnHcnv1OR89tdmePDXr8pim', 'created_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 347989), 'updated_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 347989)}
+2024-12-19 23:39:40,348 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:40,350 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,351 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:39:40,351 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('633b3924-d806-4005-a9ad-f2fe95f8ea40')}
+2024-12-19 23:39:40,354 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:40,564 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,565 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:39:40,565 - sqlalchemy.engine.Engine - INFO - [cached since 0.4707s ago] {'id': UUID('51560bac-53e4-47e4-91a2-cf76648bf708'), 'first_name': 'Rebecca', 'last_name': 'Silva', 'email': 'mikesmith@example.net', 'username': 'stephanie81', 'password': '$2b$12$Qrct2h61qf4xwJId9c3Nv.5rouRAbDLao8zyRmEvvZz0A5diFjzwO', 'created_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 565533), 'updated_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 565533)}
+2024-12-19 23:39:40,566 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:40,567 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,567 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:39:40,568 - sqlalchemy.engine.Engine - INFO - [cached since 0.2158s ago] {'pk_1': UUID('51560bac-53e4-47e4-91a2-cf76648bf708')}
+2024-12-19 23:39:40,571 - sqlalchemy.engine.Engine - INFO - INSERT INTO calculations (id, user_id, type, value_a, value_b, created_at, updated_at) VALUES (%(id)s::UUID, %(user_id)s::UUID, %(type)s, %(value_a)s, %(value_b)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:39:40,571 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] {'id': UUID('d0bb4401-e9af-40f8-967f-7c87e95626f5'), 'user_id': UUID('51560bac-53e4-47e4-91a2-cf76648bf708'), 'type': 'addition', 'value_a': 1, 'value_b': 2, 'created_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 571520), 'updated_at': datetime.datetime(2024, 12, 20, 4, 39, 40, 571520)}
+2024-12-19 23:39:40,573 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:40,574 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,575 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id, calculations.user_id, calculations.type, calculations.value_a, calculations.value_b, calculations.created_at, calculations.updated_at 
+FROM calculations 
+WHERE calculations.id = %(pk_1)s::UUID
+2024-12-19 23:39:40,575 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] {'pk_1': UUID('d0bb4401-e9af-40f8-967f-7c87e95626f5')}
+2024-12-19 23:39:40,578 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE calculations.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s
+2024-12-19 23:39:40,578 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] {'id_1': UUID('d0bb4401-e9af-40f8-967f-7c87e95626f5'), 'param_1': 1}
+2024-12-19 23:39:40,580 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:39:40,580 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('51560bac-53e4-47e4-91a2-cf76648bf708')}
+2024-12-19 23:39:40,582 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE %(param_1)s::UUID = calculations.user_id
+2024-12-19 23:39:40,583 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'param_1': UUID('51560bac-53e4-47e4-91a2-cf76648bf708')}
+2024-12-19 23:39:40,584 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:40,853 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,859 - sqlalchemy.engine.Engine - INFO - SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users) AS anon_1
+2024-12-19 23:39:40,859 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] ()
+2024-12-19 23:39:40,900 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:39:40,900 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:40,901 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:39:40,901 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:40,902 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:39:40,902 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:39:40,903 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,903 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:40,904 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:40,904 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 23:39:40,904 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] {}
+2024-12-19 23:39:40,908 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 23:39:40,908 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] {}
+2024-12-19 23:39:41,937 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 462 characters truncated ... ast_name__4)s, %(email__4)s, %(username__4)s, %(password__4)s, %(created_at__4)s, %(updated_at__4)s)
+2024-12-19 23:39:41,937 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s (insertmanyvalues) 1/1 (unordered)] {'first_name__0': 'Sarah', 'last_name__0': 'Brown', 'created_at__0': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'id__0': UUID('66b4e4e8-a813-4452-9b4e-1da5e8756a68'), 'password__0': '$2b$12$uTZodN0XaUtwuOk51YxcKOfbJ4bTnUCB/hbsfxfV.n6ByWn9Vye9.', 'email__0': 'kimberlythompson@example.com', 'username__0': 'dwatts', 'updated_at__0': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'first_name__1': 'Thomas', 'last_name__1': 'Pena', 'created_at__1': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'id__1': UUID('1ca2341f-709b-4d19-8d62-e0af3859002f'), 'password__1': '$2b$12$yKEev0.iPybRrM.AEn1qh.lydcV/tHtG5CNAYU3woICgqd6oEWaHq', 'email__1': 'alyssa81@example.net', 'username__1': 'powersjessica', 'updated_at__1': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'first_name__2': 'Molly', 'last_name__2': 'Gaines', 'created_at__2': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'id__2': UUID('d289fcb2-4c85-44ac-b909-6e5a780d10ba'), 'password__2': '$2b$12$KG.KVeFM5eN3yWauFm4yI.PyYX8AuRsEQjwc7f4YE5uHQKu7Dg5c.', 'email__2': 'eric88@example.org', 'username__2': 'ediaz', 'updated_at__2': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'first_name__3': 'Michael', 'last_name__3': 'Hart', 'created_at__3': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'id__3': UUID('3842807b-2e9e-43c3-b6e9-05837cad33dc'), 'password__3': '$2b$12$EdCvqfwER6UXbeHdSCdLQuMY1bAbPLXLGRBjcMtRWDyjJcZcWnB9K', 'email__3': 'fosterjustin@example.com', 'username__3': 'mikewolfe', 'updated_at__3': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'first_name__4': 'Jane', 'last_name__4': 'Andrews', 'created_at__4': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500), 'id__4': UUID('77b39311-9c48-4fdd-a77c-7a7ab6f15860'), 'password__4': '$2b$12$KspXRpIfEPj.RmQ0Ld0dge7X51IpOYVklhA1RvHp7gF.8qK67Q1me', 'email__4': 'jason67@example.org', 'username__4': 'kelly05', 'updated_at__4': datetime.datetime(2024, 12, 20, 4, 39, 41, 936500)}
+2024-12-19 23:39:41,940 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:41,942 - sqlalchemy.engine.Engine - INFO - SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users) AS anon_1
+2024-12-19 23:39:41,942 - sqlalchemy.engine.Engine - INFO - [cached since 1.084s ago] ()
+2024-12-19 23:39:41,949 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:39:41,952 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:41,953 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-19 23:39:41,953 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] ('e7a319ede397487b9394ace1dca6847f', 'John', 'Doe', 'john.doe@example.com', 'johndoe', 'hashedpassword', '2024-12-20 04:39:41.953508', '2024-12-20 04:39:41.953508')
+2024-12-19 23:39:41,954 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:41,954 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:41,955 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:39:41,955 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:39:41,956 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 23:39:41,956 - sqlalchemy.engine.Engine - INFO - [cached since 1.051s ago] {}
+2024-12-19 23:39:41,957 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 23:39:41,957 - sqlalchemy.engine.Engine - INFO - [cached since 1.05s ago] {}
+2024-12-19 23:39:42,163 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:39:42,164 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] {'id': UUID('03464e27-bac4-4fa5-974c-f5f327d5630b'), 'first_name': 'Ruben', 'last_name': 'Moody', 'email': 'dkelly@example.org', 'username': 'william91', 'password': '$2b$12$VQ0762FmOEiMhNE1ccuTMe.zAvdDlgGw4v0aXAWFSI5Kp3fmlJE6C', 'created_at': datetime.datetime(2024, 12, 20, 4, 39, 42, 163533), 'updated_at': datetime.datetime(2024, 12, 20, 4, 39, 42, 163533)}
+2024-12-19 23:39:42,165 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:21,399 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:21,400 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2024-12-19 23:41:21,400 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:41:21,401 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2024-12-19 23:41:21,401 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:41:21,401 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("calculations")
+2024-12-19 23:41:21,401 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:41:21,402 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("calculations")
+2024-12-19 23:41:21,402 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:41:21,404 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id UUID NOT NULL, 
+	first_name VARCHAR(50) NOT NULL, 
+	last_name VARCHAR(50) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(255) NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (username)
+)
+
+
+2024-12-19 23:41:21,404 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2024-12-19 23:41:21,405 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE calculations (
+	id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	type VARCHAR(50) NOT NULL, 
+	value_a FLOAT NOT NULL, 
+	value_b FLOAT NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2024-12-19 23:41:21,405 - sqlalchemy.engine.Engine - INFO - [no key 0.00018s] ()
+2024-12-19 23:41:21,405 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:21,460 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:41:21,460 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:21,461 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:41:21,461 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:21,462 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:41:21,462 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:21,463 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:21,465 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:41:21,465 - sqlalchemy.engine.Engine - INFO - [generated in 0.00034s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:41:21,468 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:41:21,468 - sqlalchemy.engine.Engine - INFO - [cached since 0.003335s ago] {'table_name': 'calculations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:41:21,469 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:28,143 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,146 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:41:28,146 - sqlalchemy.engine.Engine - INFO - [generated in 0.00100s] {'id': UUID('90c7d8bc-4d17-4f08-8170-2ad680c89163'), 'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com', 'username': 'johndoe', 'password': 'hashedpassword123', 'created_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 146260), 'updated_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 146260)}
+2024-12-19 23:41:28,149 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:41:28,150 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,152 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:41:28,152 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] {'email_1': 'john.doe@example.com', 'param_1': 1}
+2024-12-19 23:41:28,156 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:41:28,157 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] {'username_1': 'johndoe', 'param_1': 1}
+2024-12-19 23:41:28,159 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:41:28,402 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,403 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:41:28,403 - sqlalchemy.engine.Engine - INFO - [cached since 0.2581s ago] {'id': UUID('3aa59a0a-3a72-42ee-9f14-fb374efcfef5'), 'first_name': 'Theresa', 'last_name': 'Murphy', 'email': 'jesse76@example.com', 'username': 'zfreeman', 'password': '$2b$12$LWFRqNrfUo677y8gjp165exdKv/ToYH3PiDx32kh9HjCjFHp4vp8e', 'created_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 403783), 'updated_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 403783)}
+2024-12-19 23:41:28,404 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:28,406 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,408 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:41:28,408 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] {'pk_1': UUID('3aa59a0a-3a72-42ee-9f14-fb374efcfef5')}
+2024-12-19 23:41:28,411 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:41:28,624 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,625 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:41:28,625 - sqlalchemy.engine.Engine - INFO - [cached since 0.4795s ago] {'id': UUID('bcfb3975-ec20-4437-b4ca-74ca53ceeba4'), 'first_name': 'Lisa', 'last_name': 'Heath', 'email': 'thorntonaustin@example.org', 'username': 'shicks', 'password': '$2b$12$eK84fThI9SgbOTqceRaKi.NGEmx8g8bhcHiMlM8uJSHnXgsBcUYcC', 'created_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 625157), 'updated_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 625157)}
+2024-12-19 23:41:28,626 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:28,627 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,627 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:41:28,627 - sqlalchemy.engine.Engine - INFO - [cached since 0.2192s ago] {'pk_1': UUID('bcfb3975-ec20-4437-b4ca-74ca53ceeba4')}
+2024-12-19 23:41:28,631 - sqlalchemy.engine.Engine - INFO - INSERT INTO calculations (id, user_id, type, value_a, value_b, created_at, updated_at) VALUES (%(id)s::UUID, %(user_id)s::UUID, %(type)s, %(value_a)s, %(value_b)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:41:28,631 - sqlalchemy.engine.Engine - INFO - [generated in 0.00043s] {'id': UUID('25dc3a6a-4698-4c3c-a0b7-8ff86083e34f'), 'user_id': UUID('bcfb3975-ec20-4437-b4ca-74ca53ceeba4'), 'type': 'addition', 'value_a': 1, 'value_b': 2, 'created_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 631612), 'updated_at': datetime.datetime(2024, 12, 20, 4, 41, 28, 631612)}
+2024-12-19 23:41:28,633 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:28,634 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,635 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id, calculations.user_id, calculations.type, calculations.value_a, calculations.value_b, calculations.created_at, calculations.updated_at 
+FROM calculations 
+WHERE calculations.id = %(pk_1)s::UUID
+2024-12-19 23:41:28,635 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('25dc3a6a-4698-4c3c-a0b7-8ff86083e34f')}
+2024-12-19 23:41:28,638 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE calculations.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s
+2024-12-19 23:41:28,638 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'id_1': UUID('25dc3a6a-4698-4c3c-a0b7-8ff86083e34f'), 'param_1': 1}
+2024-12-19 23:41:28,640 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:41:28,640 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'pk_1': UUID('bcfb3975-ec20-4437-b4ca-74ca53ceeba4')}
+2024-12-19 23:41:28,643 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE %(param_1)s::UUID = calculations.user_id
+2024-12-19 23:41:28,643 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'param_1': UUID('bcfb3975-ec20-4437-b4ca-74ca53ceeba4')}
+2024-12-19 23:41:28,645 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:41:28,919 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,925 - sqlalchemy.engine.Engine - INFO - SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users) AS anon_1
+2024-12-19 23:41:28,925 - sqlalchemy.engine.Engine - INFO - [generated in 0.00034s] ()
+2024-12-19 23:41:28,966 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:41:28,967 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:28,967 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:41:28,967 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:28,968 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:41:28,968 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:41:28,969 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,969 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:28,970 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:28,971 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 23:41:28,971 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {}
+2024-12-19 23:41:28,975 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 23:41:28,975 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {}
+2024-12-19 23:41:30,021 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id__0)s::UUID, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(username__0)s, %(password__0)s, %(created_at__0)s, %(updated_at__0)s), (%(i ... 462 characters truncated ... ast_name__4)s, %(email__4)s, %(username__4)s, %(password__4)s, %(created_at__4)s, %(updated_at__4)s)
+2024-12-19 23:41:30,022 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s (insertmanyvalues) 1/1 (unordered)] {'password__0': '$2b$12$8z16dfVaFRs8S.CXtWX0.eRBfPs4tlvHrfzjm6jZVGcBj.GKOtHxq', 'updated_at__0': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'last_name__0': 'Miller', 'created_at__0': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'id__0': UUID('dfcbd1bc-8555-4f0e-b397-4e26ff1887b3'), 'email__0': 'emilymartinez@example.org', 'first_name__0': 'Michael', 'username__0': 'lydia33', 'password__1': '$2b$12$/zJc7g8D009T3u5x/9vUduB4Y918mb3F5u4qBHDbvaq3WaBrtWR/O', 'updated_at__1': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'last_name__1': 'Smith', 'created_at__1': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'id__1': UUID('808f237b-6143-4a6a-aaf0-7f8108c54281'), 'email__1': 'fernandezmaria@example.net', 'first_name__1': 'Kristin', 'username__1': 'jeffery96', 'password__2': '$2b$12$I51zN3Qovmpu0i.aYI3L7eKqSLp8Nq.P54hZCk0tlMOR0UtaDDKDu', 'updated_at__2': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'last_name__2': 'Compton', 'created_at__2': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'id__2': UUID('58a4dc3c-c047-4dc2-8d35-8bce39549e84'), 'email__2': 'david14@example.org', 'first_name__2': 'Angela', 'username__2': 'sjohnson', 'password__3': '$2b$12$0Lad.X8WHNeRLuMkqVThvuDC4cKd5K7KXZqwGG/lHDof.NcPqMV7.', 'updated_at__3': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'last_name__3': 'Miller', 'created_at__3': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'id__3': UUID('a309b907-6fc4-46e3-938e-88303b925f2c'), 'email__3': 'lisanguyen@example.com', 'first_name__3': 'Katelyn', 'username__3': 'terrencegonzalez', 'password__4': '$2b$12$tIQs3nITD2QcFH897wtfVeM1ZDLKCTGrHGtcg9eZnz1Awgr7A2wla', 'updated_at__4': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'last_name__4': 'Reyes', 'created_at__4': datetime.datetime(2024, 12, 20, 4, 41, 30, 20809), 'id__4': UUID('0719bd36-1272-4503-829b-76d39744d118'), 'email__4': 'whawkins@example.org', 'first_name__4': 'Carrie', 'username__4': 'awiggins'}
+2024-12-19 23:41:30,024 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:30,026 - sqlalchemy.engine.Engine - INFO - SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users) AS anon_1
+2024-12-19 23:41:30,026 - sqlalchemy.engine.Engine - INFO - [cached since 1.102s ago] ()
+2024-12-19 23:41:30,034 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:41:30,036 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:30,037 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-19 23:41:30,037 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] ('f1b2d5a0738748acb6384e7fa8e628b8', 'John', 'Doe', 'john.doe@example.com', 'johndoe', 'hashedpassword', '2024-12-20 04:41:30.037828', '2024-12-20 04:41:30.037828')
+2024-12-19 23:41:30,038 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:30,039 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:30,039 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:41:30,039 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:41:30,040 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 23:41:30,040 - sqlalchemy.engine.Engine - INFO - [cached since 1.069s ago] {}
+2024-12-19 23:41:30,041 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 23:41:30,041 - sqlalchemy.engine.Engine - INFO - [cached since 1.067s ago] {}
+2024-12-19 23:41:30,251 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:41:30,251 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] {'id': UUID('017ba58d-0a18-4d2f-b5dc-dcda7cb3f5d4'), 'first_name': 'Kaylee', 'last_name': 'Harris', 'email': 'gary92@example.org', 'username': 'gregory52', 'password': '$2b$12$m.SerIU3wWE8bb/8xlM/yujimhl5ENYK0RTuPfM9tZ/JHZCRcULcW', 'created_at': datetime.datetime(2024, 12, 20, 4, 41, 30, 251434), 'updated_at': datetime.datetime(2024, 12, 20, 4, 41, 30, 251434)}
+2024-12-19 23:41:30,252 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:06,053 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:06,054 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2024-12-19 23:42:06,054 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:06,055 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2024-12-19 23:42:06,055 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:06,055 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("calculations")
+2024-12-19 23:42:06,055 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:06,056 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("calculations")
+2024-12-19 23:42:06,056 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:06,058 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id UUID NOT NULL, 
+	first_name VARCHAR(50) NOT NULL, 
+	last_name VARCHAR(50) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(255) NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (username)
+)
+
+
+2024-12-19 23:42:06,058 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
+2024-12-19 23:42:06,059 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE calculations (
+	id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	type VARCHAR(50) NOT NULL, 
+	value_a FLOAT NOT NULL, 
+	value_b FLOAT NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2024-12-19 23:42:06,059 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2024-12-19 23:42:06,060 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:06,116 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:42:06,116 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:06,117 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:42:06,117 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:06,117 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:42:06,118 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:06,118 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:06,122 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:42:06,123 - sqlalchemy.engine.Engine - INFO - [generated in 0.00054s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:42:06,125 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:42:06,126 - sqlalchemy.engine.Engine - INFO - [cached since 0.003696s ago] {'table_name': 'calculations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:42:06,127 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:12,848 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:12,851 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:12,852 - sqlalchemy.engine.Engine - INFO - [generated in 0.00091s] {'id': UUID('89dbe5b0-3b97-4f99-a185-0fd730a8b4f0'), 'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com', 'username': 'johndoe', 'password': 'hashedpassword123', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 12, 851099), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 12, 851099)}
+2024-12-19 23:42:12,854 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:12,855 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:12,857 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:42:12,857 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] {'email_1': 'john.doe@example.com', 'param_1': 1}
+2024-12-19 23:42:12,861 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:42:12,861 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] {'username_1': 'johndoe', 'param_1': 1}
+2024-12-19 23:42:12,863 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:13,108 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,108 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:13,109 - sqlalchemy.engine.Engine - INFO - [cached since 0.2587s ago] {'id': UUID('f3aa1de8-e970-47d7-8ec0-3c4336fb270e'), 'first_name': 'David', 'last_name': 'Drake', 'email': 'breannamadden@example.com', 'username': 'ashley61', 'password': '$2b$12$TqvnUwic8VMcxft1uv/lhu5aXUT7thdG./Aq0C.XZDd2vaBtkB2Gi', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 108811), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 108811)}
+2024-12-19 23:42:13,110 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:13,112 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,113 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:13,113 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('f3aa1de8-e970-47d7-8ec0-3c4336fb270e')}
+2024-12-19 23:42:13,116 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:13,326 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,327 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:13,327 - sqlalchemy.engine.Engine - INFO - [cached since 0.4765s ago] {'id': UUID('9886f6cd-125e-4774-af08-4b463c6986d3'), 'first_name': 'Walter', 'last_name': 'Silva', 'email': 'cortiz@example.com', 'username': 'jeremy99', 'password': '$2b$12$teUtJBPi4L4ypcY8J/SVKuRKhkJZXNELvFXkY6Y70iKlPPmwht38.', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 327502), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 327502)}
+2024-12-19 23:42:13,328 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:13,329 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,329 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:13,329 - sqlalchemy.engine.Engine - INFO - [cached since 0.2162s ago] {'pk_1': UUID('9886f6cd-125e-4774-af08-4b463c6986d3')}
+2024-12-19 23:42:13,333 - sqlalchemy.engine.Engine - INFO - INSERT INTO calculations (id, user_id, type, value_a, value_b, created_at, updated_at) VALUES (%(id)s::UUID, %(user_id)s::UUID, %(type)s, %(value_a)s, %(value_b)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:13,333 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] {'id': UUID('fe0db23f-bb4d-48e6-85c3-3fea979a05fb'), 'user_id': UUID('9886f6cd-125e-4774-af08-4b463c6986d3'), 'type': 'addition', 'value_a': 1, 'value_b': 2, 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 333515), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 333515)}
+2024-12-19 23:42:13,335 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:13,336 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,337 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id, calculations.user_id, calculations.type, calculations.value_a, calculations.value_b, calculations.created_at, calculations.updated_at 
+FROM calculations 
+WHERE calculations.id = %(pk_1)s::UUID
+2024-12-19 23:42:13,338 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] {'pk_1': UUID('fe0db23f-bb4d-48e6-85c3-3fea979a05fb')}
+2024-12-19 23:42:13,340 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE calculations.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s
+2024-12-19 23:42:13,341 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] {'id_1': UUID('fe0db23f-bb4d-48e6-85c3-3fea979a05fb'), 'param_1': 1}
+2024-12-19 23:42:13,343 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:13,343 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'pk_1': UUID('9886f6cd-125e-4774-af08-4b463c6986d3')}
+2024-12-19 23:42:13,345 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE %(param_1)s::UUID = calculations.user_id
+2024-12-19 23:42:13,345 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {'param_1': UUID('9886f6cd-125e-4774-af08-4b463c6986d3')}
+2024-12-19 23:42:13,347 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:13,645 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:42:13,646 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:13,646 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:42:13,647 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:13,647 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:42:13,647 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:13,648 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,648 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:13,649 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:13,650 - sqlalchemy.engine.Engine - INFO - SELECT users.email AS users_email 
+FROM users
+2024-12-19 23:42:13,650 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] {}
+2024-12-19 23:42:13,653 - sqlalchemy.engine.Engine - INFO - SELECT users.username AS users_username 
+FROM users
+2024-12-19 23:42:13,654 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {}
+2024-12-19 23:42:13,861 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:13,861 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] {'id': UUID('b7bd1e5b-a0f5-4751-89bc-f5ccd2f2ba57'), 'first_name': 'Steven', 'last_name': 'Lopez', 'email': 'david91@example.com', 'username': 'eric93', 'password': '$2b$12$/vmMXGlh6yFru09TSdXyo.UeUWg/gnwKdLioMKL3R6n6f1ZjBSDCq', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 861524), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 13, 861524)}
+2024-12-19 23:42:13,863 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:35,679 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:35,681 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2024-12-19 23:42:35,681 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:35,682 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2024-12-19 23:42:35,682 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:35,682 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("calculations")
+2024-12-19 23:42:35,682 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:35,683 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("calculations")
+2024-12-19 23:42:35,683 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-12-19 23:42:35,684 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id UUID NOT NULL, 
+	first_name VARCHAR(50) NOT NULL, 
+	last_name VARCHAR(50) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	username VARCHAR(50) NOT NULL, 
+	password VARCHAR(255) NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (username)
+)
+
+
+2024-12-19 23:42:35,684 - sqlalchemy.engine.Engine - INFO - [no key 0.00026s] ()
+2024-12-19 23:42:35,685 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE calculations (
+	id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	type VARCHAR(50) NOT NULL, 
+	value_a FLOAT NOT NULL, 
+	value_b FLOAT NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2024-12-19 23:42:35,686 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2024-12-19 23:42:35,686 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:35,741 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-12-19 23:42:35,741 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:35,742 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-12-19 23:42:35,742 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:35,742 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-12-19 23:42:35,743 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2024-12-19 23:42:35,744 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:35,746 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:42:35,747 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:42:35,749 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-12-19 23:42:35,749 - sqlalchemy.engine.Engine - INFO - [cached since 0.003179s ago] {'table_name': 'calculations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-12-19 23:42:35,750 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:42,377 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,380 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:42,381 - sqlalchemy.engine.Engine - INFO - [generated in 0.00091s] {'id': UUID('18677278-5e2a-43cd-8d46-6b856d02812c'), 'first_name': 'John', 'last_name': 'Doe', 'email': 'john.doe@example.com', 'username': 'johndoe', 'password': 'hashedpassword123', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 380662), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 380662)}
+2024-12-19 23:42:42,383 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:42,384 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,387 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:42:42,387 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] {'email_1': 'john.doe@example.com', 'param_1': 1}
+2024-12-19 23:42:42,391 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s
+2024-12-19 23:42:42,391 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] {'username_1': 'johndoe', 'param_1': 1}
+2024-12-19 23:42:42,393 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:42,633 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,634 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:42,634 - sqlalchemy.engine.Engine - INFO - [cached since 0.254s ago] {'id': UUID('c6e59003-6e26-4d3b-aa3c-e2f4d6fbbcc9'), 'first_name': 'Antonio', 'last_name': 'Armstrong', 'email': 'samuel43@example.com', 'username': 'cindy60', 'password': '$2b$12$2KHoFekmEk.Boefu0si19e4LIzrPggIdbQDPPxS4j25rBakeAtBvm', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 634507), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 634507)}
+2024-12-19 23:42:42,635 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:42,637 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,638 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:42,639 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] {'pk_1': UUID('c6e59003-6e26-4d3b-aa3c-e2f4d6fbbcc9')}
+2024-12-19 23:42:42,641 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-12-19 23:42:42,848 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,849 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, first_name, last_name, email, username, password, created_at, updated_at) VALUES (%(id)s::UUID, %(first_name)s, %(last_name)s, %(email)s, %(username)s, %(password)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:42,849 - sqlalchemy.engine.Engine - INFO - [cached since 0.4692s ago] {'id': UUID('27d547e1-38d3-4cdb-9245-e39a85031231'), 'first_name': 'Amanda', 'last_name': 'Olson', 'email': 'turnerzachary@example.com', 'username': 'dominguezmichael', 'password': '$2b$12$Le4EIPn.GxWrRLRTX7YqFO.qE3GnozZUk6BittRT17dYgpJJtxdYW', 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 849509), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 849509)}
+2024-12-19 23:42:42,850 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:42,851 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,852 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.first_name, users.last_name, users.email, users.username, users.password, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:42,852 - sqlalchemy.engine.Engine - INFO - [cached since 0.2135s ago] {'pk_1': UUID('27d547e1-38d3-4cdb-9245-e39a85031231')}
+2024-12-19 23:42:42,855 - sqlalchemy.engine.Engine - INFO - INSERT INTO calculations (id, user_id, type, value_a, value_b, created_at, updated_at) VALUES (%(id)s::UUID, %(user_id)s::UUID, %(type)s, %(value_a)s, %(value_b)s, %(created_at)s, %(updated_at)s)
+2024-12-19 23:42:42,855 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] {'id': UUID('e346d4b2-42b6-41c6-9f6f-0e1da50a7746'), 'user_id': UUID('27d547e1-38d3-4cdb-9245-e39a85031231'), 'type': 'addition', 'value_a': 1, 'value_b': 2, 'created_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 855535), 'updated_at': datetime.datetime(2024, 12, 20, 4, 42, 42, 855535)}
+2024-12-19 23:42:42,857 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-12-19 23:42:42,858 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-12-19 23:42:42,859 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id, calculations.user_id, calculations.type, calculations.value_a, calculations.value_b, calculations.created_at, calculations.updated_at 
+FROM calculations 
+WHERE calculations.id = %(pk_1)s::UUID
+2024-12-19 23:42:42,859 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('e346d4b2-42b6-41c6-9f6f-0e1da50a7746')}
+2024-12-19 23:42:42,862 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE calculations.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s
+2024-12-19 23:42:42,862 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] {'id_1': UUID('e346d4b2-42b6-41c6-9f6f-0e1da50a7746'), 'param_1': 1}
+2024-12-19 23:42:42,865 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.username AS users_username, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(pk_1)s::UUID
+2024-12-19 23:42:42,865 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'pk_1': UUID('27d547e1-38d3-4cdb-9245-e39a85031231')}
+2024-12-19 23:42:42,867 - sqlalchemy.engine.Engine - INFO - SELECT calculations.id AS calculations_id, calculations.user_id AS calculations_user_id, calculations.type AS calculations_type, calculations.value_a AS calculations_value_a, calculations.value_b AS calculations_value_b, calculations.created_at AS calculations_created_at, calculations.updated_at AS calculations_updated_at 
+FROM calculations 
+WHERE %(param_1)s::UUID = calculations.user_id
+2024-12-19 23:42:42,867 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {'param_1': UUID('27d547e1-38d3-4cdb-9245-e39a85031231')}
+2024-12-19 23:42:42,869 - sqlalchemy.engine.Engine - INFO - ROLLBACK
