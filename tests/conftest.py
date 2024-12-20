@@ -28,7 +28,14 @@ load_dotenv()
 # Pydantic Settings for Configuration (Ensure this matches your main application settings)
 class TestSettings(Settings):
     class Config:
-        env_prefix = ""  # Prefix for test database environment variables
+        db_host: str
+        db_port: int
+        db_user: str
+        db_password: str
+        db_name: str
+        salt: str
+        api_key: str
+        env_prefix = "TEST_DB_"  # Prefix for test database environment variables
 
 # Instantiate test settings
 test_settings = TestSettings()
