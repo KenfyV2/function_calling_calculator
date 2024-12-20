@@ -17,25 +17,18 @@ from app.models import Base, User  # Ensure these imports are correct based on y
 from app.schemas import UserData
 from app.settings import Settings  # Adjust the import path based on where Settings is defined
 
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize Faker and Passlib's CryptContext
 fake = Faker()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# Load environment variables from .env file
-load_dotenv()
-
 # Pydantic Settings for Configuration (Ensure this matches your main application settings)
 class TestSettings(Settings):
     class Config:
-        db_host: str
-        db_port: int
-        db_user: str
-        db_password: str
-        db_name: str
-        salt: str
-        api_key: str
-        env_prefix = "TEST_DB_"  # Prefix for test database environment variables
+        env_file = ".env"
+        env_file_encoding = "utf-8"
 
 # Instantiate test settings
 test_settings = TestSettings()
@@ -46,7 +39,6 @@ TEST_DATABASE_URL = (
     f'{test_settings.db_password}@{test_settings.db_host}:'
     f'{test_settings.db_port}/{test_settings.db_name}'
 )
-
 
 @pytest.fixture(scope='session')
 def engine() -> Generator:
@@ -59,7 +51,6 @@ def engine() -> Generator:
     finally:
         engine.dispose()
 
-
 @pytest.fixture(scope='session')
 def SessionLocal(engine) -> Generator:
     """
@@ -68,7 +59,6 @@ def SessionLocal(engine) -> Generator:
     Session = sessionmaker(bind=engine)
     yield Session
     # No teardown needed for sessionmaker
-
 
 @pytest.fixture(scope='session', autouse=True)
 def setup_database(engine):
@@ -80,7 +70,6 @@ def setup_database(engine):
     yield
     # Drop tables
     # Base.metadata.drop_all(engine)
-
 
 @pytest.fixture(scope='function')
 def db_session(SessionLocal) -> Generator:
@@ -95,7 +84,6 @@ def db_session(SessionLocal) -> Generator:
         raise e
     finally:
         session.close()
-
 
 @pytest.fixture(scope='function')
 def test_user(db_session) -> User:
@@ -129,7 +117,6 @@ def test_user(db_session) -> User:
     db_session.refresh(user)  # Refresh to get updated fields like id
     
     return user
-
 
 @pytest.fixture(scope='session')
 def fastapi_server():
@@ -172,7 +159,6 @@ def fastapi_server():
     fastapi_process.wait()
     print("FastAPI server has been terminated.")
 
-
 @pytest.fixture(scope="session")
 def playwright_instance_fixture():
     """
@@ -180,7 +166,6 @@ def playwright_instance_fixture():
     """
     with sync_playwright() as p:
         yield p
-
 
 @pytest.fixture(scope="session")
 def browser(playwright_instance_fixture):
@@ -190,7 +175,6 @@ def browser(playwright_instance_fixture):
     browser = playwright_instance_fixture.chromium.launch(headless=True)
     yield browser
     browser.close()
-
 
 @pytest.fixture(scope="function")
 def page(browser):
