@@ -41,6 +41,11 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install Playwright browsers
+      run: |
+        source venv/bin/activate
+        playwright install
+
     - name: Create .env file
       run: |
         echo "API_KEY=${{ secrets.API_KEY }}" >> .env
