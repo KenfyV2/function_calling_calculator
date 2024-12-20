@@ -25,7 +25,6 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-
     steps:
     - uses: actions/checkout@v3
 
@@ -40,6 +39,11 @@ jobs:
         source venv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
+        
+    - name: Install Playwright browsers
+      run: |
+        source venv/bin/activate
+        playwright install
 
     - name: Create .env file
       run: |
