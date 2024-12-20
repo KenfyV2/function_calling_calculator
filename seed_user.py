@@ -158,9 +158,31 @@ def parse_arguments():
                         help='Number of fake users to generate (default: 10)')
     return parser.parse_args()
 
+# Seed the database
+def seed_db():
+    db = Session()
+    try:
+        # Add your seeding logic here
+        user = User(
+            first_name="John",
+            last_name="Doe",
+            email="john.doe@example.com",
+            username="johndoe",
+            password="hashedpassword"  # Ensure this is a hashed password
+        )
+        db.add(user)
+        db.commit()
+        print("Database seeded successfully.")
+    except Exception as e:
+        db.rollback()
+        print(f"Error seeding database: {e}")
+    finally:
+        db.close()
+
 def main():
     args = parse_arguments()
     seed_users(args.number)
 
 if __name__ == '__main__':
     main()
+    seed_db()
