@@ -9,7 +9,7 @@
             text-align: center;
             margin-top: 50px;
         }
-        .calculator, .chat {
+        .calculator, .chat, .history, .data-table {
             margin-top: 30px;
         }
         input, textarea {
@@ -22,6 +22,25 @@
         .result {
             margin-top: 10px;
             font-weight: bold;
+        }
+        .history-result, .data-table-result {
+            margin-top: 10px;
+            height: 200px; /* Adjust the height as needed */
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -41,12 +60,23 @@
     
     <div class="chat">
         <h2>Groq AI Chat</h2>
-        <p>Ask Groq AI addition, subtraction, multiplication, or division!</p>
+        <p>Ask Groq AI addition, subtraction, multiplication, or division or ask the history!</p>
         <form id="chat-form">
             <textarea id="prompt" name="prompt" placeholder="Enter your prompt" required></textarea><br>
             <button type="submit">Send</button>
         </form>
         <div class="result" id="chat-result"></div>
+    </div>
+
+    <div class="history">
+        <h2>Chat History</h2>
+        <div class="history-result" id="history-result"></div>
+    </div>
+
+    <div class="data-table">
+        <h2>User Data Table</h2>
+        <button onclick="createUser()">Create User</button>
+        <div class="data-table-result" id="data-table-result"></div>
     </div>
     
     <script>
@@ -54,7 +84,7 @@
             const a = parseFloat(document.getElementById('a').value);
             const b = parseFloat(document.getElementById('b').value);
             const resultElement = document.getElementById('result');
-    
+
             try {
                 const response = await fetch('/' + operation, {
                     method: 'POST',
@@ -69,6 +99,7 @@
                 } else {
                     resultElement.innerText = 'Error: ' + data.error;
                 }
+                fetchHistory(); // Refresh history after calculation
             } catch (error) {
                 console.error('Fetch error:', error);
                 resultElement.innerText = 'Error: ' + error.message;
@@ -87,11 +118,85 @@
                 });
                 const data = await response.json();
                 chatResultElement.innerText = `Result: ${data.result}`;
+                fetchHistory(); // Refresh history after chat
             } catch (error) {
                 console.error('Fetch error:', error);
                 chatResultElement.innerText = 'Error: ' + error.message;
             }
         });
+
+        async function fetchHistory() {
+            const historyResultElement = document.getElementById('history-result');
+            try {
+                console.log('Fetching history...');
+                const response = await fetch('/history', {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                const data = await response.json();
+                console.log('History Data:', data);
+                if (response.ok) {
+                    historyResultElement.innerHTML = data.history.map(item => `<p>Prompt: ${item.prompt}<br>Result: ${item.result}</p>`).join('');
+                } else {
+                    historyResultElement.innerText = 'Error: ' + data.error;
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                historyResultElement.innerText = 'Error: ' + error.message;
+            }
+        }
+
+        async function fetchData() {
+            const dataTableResultElement = document.getElementById('data-table-result');
+            try {
+                const response = await fetch('/users', {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                const data = await response.json();
+                console.log('Data:', data);
+                if (response.ok) {
+                    // Sort data by created_at in descending order
+                    data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+                    let table = '<table><tr><th>#</th><th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Username</th><th>Created At</th></tr>'; // Adjust columns as needed
+                    data.forEach((item, index) => {
+                        table += `<tr><td>${data.length - index}</td><td>${item.id}</td><td>${item.first_name}</td><td>${item.last_name}</td><td>${item.email}</td><td>${item.username}</td><td>${item.created_at}</td></tr>`; // Adjust columns as needed
+                    });
+                    table += '</table>';
+                    dataTableResultElement.innerHTML = table;
+                } else {
+                    dataTableResultElement.innerText = 'Error: ' + data.error;
+                }
+                fetchHistory(); // Refresh history after fetching data
+            } catch (error) {
+                console.error('Fetch error:', error);
+                dataTableResultElement.innerText = 'Error: ' + error.message;
+            }
+        }
+
+        async function createUser() {
+            try {
+                const response = await fetch('/create_user', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                const data = await response.json();
+                console.log('Create User Response:', data);
+                if (response.ok) {
+                    fetchData(); // Refresh the data table
+                } else {
+                    alert('Error: ' + data.error);
+                }
+                fetchHistory(); // Refresh history after creating user
+            } catch (error) {
+                console.error('Fetch error:', error);
+                alert('Error: ' + error.message);
+            }
+        }
+
+        // Initial fetch of history and data when the page loads
+        fetchHistory();
+        fetchData();
     </script>
 </body>
 </html>
