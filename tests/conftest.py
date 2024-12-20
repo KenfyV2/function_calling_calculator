@@ -27,7 +27,7 @@ print(f"db_user: {os.getenv('db_user')}")
 print(f"db_password: {os.getenv('db_password')}")
 print(f"db_name: {os.getenv('db_name')}")
 print(f"db_port: {os.getenv('db_port')}")
-print(f"salt: {os.getenv('salt')}")
+print(f"salt: {os.getenv('SALT')}")
 print(f"api_key: {os.getenv('API_KEY')}")
 
 # Initialize Faker and Passlib's CryptContext
@@ -36,7 +36,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # Pydantic Settings for Configuration (Ensure this matches your main application settings)
 class TestSettings(Settings):
-    class Config:
+    class Config(Settings.Config):
         env_file = ".env"
         env_file_encoding = "utf-8"
 
